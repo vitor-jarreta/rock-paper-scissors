@@ -91,7 +91,7 @@ main {
 .table-score {
     background-color: #d1d7e0;
     color: #212830;
-    padding: 25px;
+    padding: 18px;
     border-radius: 20px;
     width: 150px;
 }
@@ -115,4 +115,118 @@ main {
 
 .machine-score {
     background-color: #F8D7DA;
+}
+
+.gameplay {
+    display: grid;
+    width: 650px;
+    margin: 0 auto;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 40px 1fr;
+    margin-top: 100px;
+    align-items: center;
+    justify-items: center;
+}
+
+.image {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    border: 3px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image img {
+    width: 70%;
+}
+
+.image:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.rock {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    border: 10px solid coral;
+}
+
+.scissor {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    border: 10px solid aquamarine;
+}
+
+.paper {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    border: 10px solid #FFCC00;
+}
+
+.reset{
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+}
+
+.reset p{
+    font-size: 1.1em;
+    border: 2px solid #d1d7e0;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.reset p:hover {
+    cursor: pointer;
+    background-color: #d1d7e0;
+    color: #212830;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.you-game {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.machine-game {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+}
+
+.result-game{
+    grid-column: 2 / 5;
+    grid-row: 2 / 3;
+
+}
+
+.gameplay h2{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #d1d7e0;
+}
+
+
+.play-again {
+    grid-column: 2 / 5;
+    grid-row: 3 / 4;
+    text-align: center;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #212830;
+}
+
+.play-again p {
+    padding: 15px;
+    border: 2px solid #d1d7e0;
+    border-radius: 20px;
+    background-color: #d1d7e0;
+}
+
+.play-again p:hover {
+    scale: 1.1;
+    transition: scale 0.3s ease-in-out;
 }
