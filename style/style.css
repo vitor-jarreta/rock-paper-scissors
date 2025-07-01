@@ -122,7 +122,7 @@ main {
     width: 650px;
     margin: 0 auto;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr 40px 1fr;
+    grid-template-rows: 3fr 40px 2fr;
     margin-top: 100px;
     align-items: center;
     justify-items: center;
@@ -167,7 +167,7 @@ main {
 }
 
 .reset{
-    margin-top: 75px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
 }

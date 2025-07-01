@@ -14,55 +14,34 @@
                 <h1>Rock Paper Scissor</h1>
             </div>
             <div class="score">
-                <div class="human-score table-score">
+                <div class="human-score table-score js-human-score">
                     <h3>You</h3>
                     <p>0</p>
                 </div>
-                <div class="machine-score table-score">
+                <div class="machine-score table-score js-machine-score">
                     <h3>Machine</h3>
                     <p>0</p>
                 </div>
-                <div class="draw-score table-score">
+                <div class="draw-score table-score js-draw-score">
                     <h3>Draw</h3>
                     <p>0</p>
                 </div>
             </div>
 
-            <div class="gameplay">
-                <div class="image rock">
+            <div class="gameplay js-gameplay">
+                <div class="image rock" onclick="play('rock')">
                     <img src="https://res.cloudinary.com/dclnzborn/image/upload/v1751244999/Copilot_20250629_165007_iwctkz.png" alt="rock">
                 </div>
-                <div class="image paper">
+                <div class="image paper" onclick="play('paper')">
                     <img src="https://res.cloudinary.com/dclnzborn/image/upload/v1751244999/Copilot_20250629_165633_yxhuza.png" alt="paper">
                 </div>
-                <div class="image scissor">
+                <div class="image scissor" onclick="play('scissor')">
                     <img src="https://res.cloudinary.com/dclnzborn/image/upload/v1751244998/Copilot_20250629_165259_u8fst9.png" alt="scissor">
                 </div>
             </div>
 
-            <div class="reset">
+            <div class="reset" onclick="reset()">
                 <p>Reset Score</p>
-            </div>
-
-            <div class="gameplay">
-                <div class="you-game">
-                    <h2>You</h2>
-                    <div class="image rock">
-                        <img src="https://res.cloudinary.com/dclnzborn/image/upload/v1751244999/Copilot_20250629_165007_iwctkz.png" alt="rock">
-                    </div>
-                </div>
-                <div class="machine-game">
-                    <h2>Machine</h2>
-                    <div class="image rock">
-                        <img src="https://res.cloudinary.com/dclnzborn/image/upload/v1751244999/Copilot_20250629_165007_iwctkz.png" alt="rock">
-                    </div>
-                </div>
-                <div class="result-game">
-                    <h2>It is Draw</h2>
-                </div>
-                <div class="play-again">
-                    <p>Play Again</p>
-                </div>
             </div>
         </div>
     </main>
