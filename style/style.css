@@ -64,14 +64,14 @@ body {
 
 main {
     max-width: 1000px;
-    margin: 60px auto;
+    margin: 30px auto;
     padding: 40px;
     border: 3px solid rgba(209, 215, 224, 0.1);
     border-radius: 40px;
 }
 
 .title {
-    font-size: 2.4em;
+    font-size: 2.1em;
     text-align: center;
     margin-bottom: 30px;
     font-weight: 600;
@@ -81,7 +81,7 @@ main {
     display: flex;
     width: 75%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0 auto;
     border: 3px solid rgba(209, 215, 224, 0.1);
     padding: 25px;
@@ -92,12 +92,13 @@ main {
     background-color: #d1d7e0;
     color: #212830;
     padding: 18px;
+    border: 6px solid white;
     border-radius: 20px;
     width: 150px;
 }
 
 .table-score h3 {
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin-bottom: 10px;
     text-align: center;
     font-weight: 500;
@@ -109,13 +110,13 @@ main {
     font-weight: 700;
 }
 
-.human-score {
+/* .human-score {
     background-color: #CAE8BD;
 }
 
 .machine-score {
     background-color: #F8D7DA;
-}
+} */
 
 .gameplay {
     display: grid;
@@ -123,7 +124,7 @@ main {
     margin: 0 auto;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 3fr 40px 2fr;
-    margin-top: 100px;
+    margin-top: 60px;
     align-items: center;
     justify-items: center;
 }

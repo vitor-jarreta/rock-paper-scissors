@@ -19,14 +19,25 @@ function gameplayAnimation(element) {
 }
 
 
-function scoreAnimation(element) {
+function scoreAnimation(element, resultPlay) {
     element.style.transition = 'transform 0.3s ease-in-out';
     element.style.transform = 'scale(1.1)';
+
+    if (resultPlay === "win") {
+        element.style.transition = 'background-color 0.5s ease-in-out'
+        element.style.background = '#CAE8BD'
+    } else if (resultPlay === "losse") {
+        element.style.transition = 'background-color 0.5s ease-in-out'
+        element.style.background = '#F8D7DA'
+    }
 
     // Reverter a animação após 500ms
     setTimeout(() => {
         element.style.transform = 'scale(1)';
+        element.style.background = '#d1d7e0';
     }, 500);
+
+
 }
 
 function pointScoreAnimation(element) {
@@ -96,7 +107,7 @@ function play(element) {
         win_score = document.querySelector('.js-human-score');
         win_value = win_score.querySelector('p');
         win_value.innerHTML = wins;
-        scoreAnimation(win_score);
+        scoreAnimation(win_score, "win");
         pointScoreAnimation(win_value);
 
         gameplay = document.querySelector(".js-gameplay");
@@ -112,7 +123,7 @@ function play(element) {
         losse_score = document.querySelector('.js-machine-score');
         losse_value = losse_score.querySelector('p');
         losse_value.innerHTML = losses;
-        scoreAnimation(losse_score);
+        scoreAnimation(losse_score, "losse");
         pointScoreAnimation(losse_value);
 
         gameplay = document.querySelector(".js-gameplay");
@@ -192,8 +203,27 @@ function resultLayout(play, machinePlay, result) {
                 <div class="result-game">
                     <h2>${result}</h2>
                 </div>
-                <div class="play-again">
+                <div class="play-again" onclick = "playAgain()">
                     <p>Play Again</p>
                 </div>`
 }
 
+
+function playAgain() {
+    gameplay = document.querySelector(".js-gameplay");
+
+    new_gameplay_layout = `
+        <div class="image rock" onclick="play('rock')">
+            <img src="https://res.cloudinary.com/dclnzborn/image/upload/v1751244999/Copilot_20250629_165007_iwctkz.png" alt="rock">
+        </div>
+        <div class="image paper" onclick="play('paper')">
+            <img src="https://res.cloudinary.com/dclnzborn/image/upload/v1751244999/Copilot_20250629_165633_yxhuza.png" alt="paper">
+        </div>
+        <div class="image scissor" onclick="play('scissor')">
+            <img src="https://res.cloudinary.com/dclnzborn/image/upload/v1751244998/Copilot_20250629_165259_u8fst9.png" alt="scissor">
+        </div>
+    `
+
+    gameplay.innerHTML = new_gameplay_layout;
+    gameplayAnimation(gameplay);
+}
