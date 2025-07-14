@@ -34,7 +34,7 @@ Este é um projeto simples desenvolvido com o objetivo de demonstrar meus conhec
 
 Toda a lógica por trás do jogo foi implementada em JavaScript. Através dele, é possível simular uma jogada contra a máquina, que escolhe uma opção aleatória, proporcionando uma experiência interativa e intuitiva para o usuário. Além de aplicar conceitos básicos de lógica de programação, utilizei manipulação do DOM para exibir as jogadas e resultados de forma dinâmica.
 
-O jogo está disponível online e pode ser acessado através deste link: [Jogar Pedra, Papel e Tesoura]().
+O jogo está disponível online e pode ser acessado através deste link: [Jogar Pedra, Papel e Tesoura](https://vitor-jarreta.github.io/rock-paper-scissors/).
 
 Sinta-se à vontade para experimentar!
 
@@ -45,7 +45,7 @@ This is a simple project developed to showcase my knowledge of HTML, CSS, and Ja
 
 All the game logic is implemented in JavaScript. With it, the computer can randomly select a move, simulating a match against a human player and providing an interactive and intuitive user experience. In addition to applying basic programming logic, I used DOM manipulation to dynamically display the moves and results.
 
-The game is available online and can be accessed through this link: [Play Rock, Paper, Scissors]().
+The game is available online and can be accessed through this link: [Play Rock, Paper, Scissors](https://vitor-jarreta.github.io/rock-paper-scissors/).
 
 Feel free to give it a try!
 
